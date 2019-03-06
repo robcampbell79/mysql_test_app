@@ -5,8 +5,7 @@
 
 <br><br>
 
-<h2>First 59 numbers In Fibonacci Series, Just Be Sure To Subtract One From Id
-  For Accuracy</h2>
+<h2>Some Random Numbers</h2>
 <?php
   echo $data;
  ?>

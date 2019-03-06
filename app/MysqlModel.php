@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB; //I had to add this line to use DB::table
 class MysqlModel extends Model
 {
   public static function GetAll() {
-    $results = DB::table('ronin')->get();
+    $results = DB::table('random_nums')->get();
 
     return $results;
   }
