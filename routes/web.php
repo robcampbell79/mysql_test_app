@@ -19,7 +19,11 @@ Route::get('/custom-views', function() {
 
   $mysqlModel = new \App\MysqlModel();
 
+  $start = microtime(true);
+
   $data = $mysqlModel->GetAll();
 
-  return view('custom-views.index')->with('data', $data);
+  $time_elapsed = microtime(true) - $start;
+
+  return view('custom-views.index')->with('data', $data)->with('time_elapsed', $time_elapsed);
 });
