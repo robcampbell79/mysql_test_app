@@ -6,15 +6,10 @@
 <br><br>
 
 <h2>Some Random Numbers</h2>
-<?php
-  $begin = microtime(true);
 
-  echo $data;
-  echo "<br><br>";
-  echo "The time elapsed for db function is: " . $time_elapsed;
-  echo "<br><br>";
-
-  $end = microtime(true) - $begin;
-
-  echo "Page loads up in: " . $end;
- ?>
+<table class="table table-striped">
+  <tr><th>Number</th></tr>
+  @foreach($data as $key => $result)
+    <tr><td>{{$result->number}}</td></tr>
+  @endforeach
+</table>
