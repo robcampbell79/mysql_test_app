@@ -9,7 +9,7 @@
 
 <table class="table table-striped">
   <tr><th>Number</th></tr>
-  @foreach($data as $key => $result)
+  @foreach($data as $result)
     <tr><td>{{$result->number}}</td></tr>
   @endforeach
 </table>
